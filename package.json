@@ -1,15 +1,18 @@
 {
-  "name": "projectx",
+  "name": "optlit",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "vite": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "php": "php -S localhost:8000",
+    "dev": "npm-run-all -p vite php"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
+    "npm-run-all": "^4.1.5",
     "vite": "^5.4.8"
   },
   "dependencies": {
