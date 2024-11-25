@@ -6,9 +6,10 @@ header('Access-Control-Allow-Methods: POST, OPTIONS'); // Allow POST and OPTIONS
 header('Access-Control-Allow-Headers: Content-Type, Authorization'); // Allow Content-Type and any other necessary headers
 header('Access-Control-Max-Age: 86400'); // Cache the preflight response for 1 day (optional but recommended)
 
+// Sets the HTTP response header to indicate the content type of the response is JSON
 header("Content-Type: application/json");
 
-// Get the raw POST data (because we’re sending JSON)
+// Retrieves and decodes the JSON data from the request body into a PHP associative array
 $inputData = json_decode(file_get_contents("php://input"), true);
 
 // Check if the necessary fields are provided
@@ -17,19 +18,17 @@ if (!isset($inputData['fullname']) || !isset($inputData['email']) || !isset($inp
     exit;
 }
 
+// Checks if a user with the given email exists in the database
 function isEmailExists($email, $conn)
 {
-
-    $sql = "SELECT 1 FROM users WHERE email = ? LIMIT 1";
-    $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "s", $email);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_store_result($stmt);
-
-    $exists = mysqli_stmt_num_rows($stmt) > 0;
-
-    mysqli_stmt_close($stmt);
-    return $exists;
+    $sql = "SELECT 1 FROM users WHERE email = ? LIMIT 1"; // SQL query to check for existence of email
+    $stmt = mysqli_prepare($conn, $sql); // Prepares the SQL statement
+    mysqli_stmt_bind_param($stmt, "s", $email); // Binds the email parameter to the prepared statement
+    mysqli_stmt_execute($stmt); // Executes the statement
+    mysqli_stmt_store_result($stmt); // Stores the result to enable checking the number of rows
+    $exists = mysqli_stmt_num_rows($stmt) > 0; // Determines if any row exists (true if the email exists)
+    mysqli_stmt_close($stmt); // Closes the prepared statement
+    return $exists; // Returns true if the email exists, otherwise false
 }
 
 if (isEmailExists($inputData['email'], $conn)) {

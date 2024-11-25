@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/navBar.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <nav class="nav-bar">
             <div class="container nav-item-container">
                 <div class="logo">
-                    <a href="index.html"><img src="../public/newTech-transformed-removebg-preview.png" alt="Logo"></a>
+                    <a href="../index.html"><img src="../public/newTech-transformed-removebg-preview.png" alt="Logo"></a>
                 </div>
                 <div class="nav-lists">
                     <ul class="nav-route">
@@ -34,7 +35,7 @@
                     </ul>
                     <div class="nav-btns">
                         <a href=""><button class="btn btn-primary login btn-size">Login</button></a>
-                        <a href="./signup.html"><button class="btn btn-primary btn-size">Signup</button></a>
+                        <a href="signup.html"><button class="btn btn-primary btn-size">Signup</button></a>
                     </div>
                 </div>
                 <div class="menu">
@@ -45,13 +46,81 @@
     </header>
 
     <!-- content section  -->
-    <main>
+    <div class="container login-container">
 
-    </main>
+        <!-- Main container for the layout -->
+        <div class="main-container">
+            <!-- Left panel for the 'Welcome Back' section -->
+            <div class="left-panel">
+                <div class="welcome">
+                    <!-- Welcome message -->
+                    <h1>New Here!</h1>
+                    <p>Create Your Account If You Are New To Exprole Better</p>
+                    <!-- Sign-in button -->
+                    <button class="sign-up-btn">SIGN UP</button>
+                </div>
+            </div>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-row">
+            <!-- Right panel for the 'Create Account' section -->
+            <div class="right-panel">
+                <!-- Heading for Create Account -->
+                <h1>Login To Continue</h1>
+
+                <!-- <div class="social-media">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">G+</a>
+                    <a href="#" class="social-icon">in</a>
+                </div> -->
+                <!-- <p>or use your email for registration:</p> -->
+
+                <!-- Form for name, email, and password input fields -->
+                <form id="login-form">
+                    <!-- Email input field -->
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                    <!-- Password input field -->
+                    <div class="password-field">
+                        <div style="position: relative;">
+                            <input type="password" placeholder="Password" id="password" name="password">
+                            <span id="toggle-password"
+                                style="position: absolute; right: 0; height: 100%; align-content: center; padding: 0 20px 0 0; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                    color="#000000" fill="none" style="display: none; cursor:pointer" id="open-eye">
+                                    <path
+                                        d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                    color="#000000" fill="none" style="cursor: pointer;" id="close-eye">
+                                    <path d="M22 8C22 8 18 14 12 14C6 14 2 8 2 8" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M15 13.5L16.5 16" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20 11L22 13" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 13L4 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 13.5L7.5 16" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p style="display: none;" id="password-message"></p>
+                    </div>
+                    <!-- Sign-up button -->
+                    <button type="submit" class="login-btn">LOGIN</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
                 <div class="footer-col">
                     <h4>Service</h4>
                     <ul>
@@ -59,7 +128,7 @@
                         <li><a href="#">Web Development</a></li>
                         <li><a href="#">Data Structure</a></li>
                         <li><a href="#">Operating System</a></li>
-                        <!-- <li><a href="#">Databases</a></li> -->
+                        <li><a href="#">Databases</a></li>
     
     
                     </ul>
@@ -92,13 +161,13 @@
                 </div>
             </div>
             <div class="social-row">
-                <!-- <ul class="social-icons">
+                <ul class="social-icons">
                       <li><a href="#"><img src="" alt="Facebook"></a></li>
                       <li><a href="#"><img src="" alt="Instagram"></a></li>
                       <li><a href="#"><img src="" alt="LinkedIn"></a></li>
                       <li><a href="#"><img src="" alt="Twitter"></a></li>
                     </ul>
-                  </div> -->
+                  </div>
     
                 <div class="footer-bottom">
                     <p>&copy; 2024 TechUpSkill. All rights reserved.</p>
@@ -107,11 +176,10 @@
     </footer>
 </body>
 
-<!-- Footer Section -->
 
 
 <!-- ---------------------------javascript----------------------------------- -->
-<script type="module" src="/scripts/login.js"></script>
+<script type="module" src="../scripts/login.js"></script>
 <!-- navBar  -->
 <script src="../scripts/navBar.js"></script>
 

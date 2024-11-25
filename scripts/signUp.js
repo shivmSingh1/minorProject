@@ -1,8 +1,9 @@
 import { isPasswordValid } from "../modules/validation";
+import { shToast, success, danger } from "../modules/toast";
 
 const signInBtn = document.querySelector(".sign-in-btn");
 signInBtn.addEventListener("click", () => {
-    window.location.href = "login.html"
+    window.location.href = "../pages/login.html";
 })
 
 
@@ -79,9 +80,12 @@ form.addEventListener("submit", function (e) {
             .then((data) => {
                 // Handle the server response (data from PHP)
                 if (data.success) {
-                    alert("Registration Successful");
+                    shToast("Registration Successfull", success);
+                    setTimeout(() => {
+                        window.location.href = "../index.html";
+                    }, 2000);
                 } else {
-                    alert(`Registration Unsuccessful - ${data.error}`);
+                    shToast(`Registration Unsuccessful - ${data.error}`, danger);
                 }
             })
             .catch((error) => {
