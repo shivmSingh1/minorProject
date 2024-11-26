@@ -1017,41 +1017,247 @@ const chapters = [
 
 const practiceQuestions = [
   {
-    chapterIndex: 0,
+    chapterIndex: 1, //Introduction to HTML
     questions: [
       {
-        question: "",
-        solution: ``,
+        question: "What is the primary purpose of HTML on the Internet?",
+        solution: `HTML (HyperText Markup Language) is used to structure content on the web. It defines the elements of a web page, such as headings, paragraphs, images, and links, enabling browsers to display and interpret the content correctly.`,
       },
       {
-        question: "",
-        solution: ``,
+        question:
+          "How did the development of the World Wide Web impact the Internet?",
+        solution: `The World Wide Web, developed by Tim Berners-Lee, transformed the Internet from a data-sharing network into a user-friendly platform for accessing information. It introduced the concept of hypertext, making it possible to link documents and navigate between them easily.`,
+      },
+
+      {
+        question: "What are some key features introduced in HTML5?",
+        solution: `HTML5 introduced several new elements and APIs, including the <video> and <audio> tags for embedding multimedia, the <canvas> element for drawing graphics, and APIs for offline storage, geolocation, and drag-and-drop functionality. These advancements greatly enhanced web interactivity and performance.`,
+      },
+      {
+        question: "Why is the Internet considered a global network?",
+        solution: `The Internet is considered a global network because it connects millions of private, public, academic, business, and government networks across the world. This interconnectedness allows for seamless communication and data exchange on a global scale.`,
       },
     ],
   },
   {
-    chapterIndex: 1,
+    chapterIndex: 2, //Understanding HTML
     questions: [
       {
-        question: "",
-        solution: ``,
+        question: "Create a simple HTML document structure.",
+        solution: `<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+</body>
+</html>
+`,
       },
       {
-        question: "",
-        solution: ``,
+        question: "Add a link to an external website.",
+        solution: `<a href="https://example.com">Visit Example</a>
+`,
+      },
+      {
+        question: "Create a list of items.",
+        solution: `<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+`,
+      },
+      {
+        question: "Insert an image from a URL.",
+        solution: `<img src="https://example.com/image.jpg" alt="Description">`,
       },
     ],
   },
   {
-    chapterIndex: 2,
+    chapterIndex: 3, // HTML & URLS
     questions: [
       {
-        question: "",
-        solution: ``,
+        question: "How do you create a hyperlink to an external website?",
+        solution: `<a href="https://www.example.com">Visit Example</a>
+`,
       },
       {
-        question: "",
-        solution: ``,
+        question: "How do you embed an image from a URL?",
+        solution: `<img src="https://www.example.com/image.jpg" alt="Example Image">
+`,
+      },
+      {
+        question:
+          "How do you create a form that submits data to a specified URL?",
+        solution: `<form action="https://www.example.com/submit" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <input type="submit" value="Submit">
+</form>
+`,
+      },
+      {
+        question: "How do you link an external CSS stylesheet?",
+        solution: `<link rel="stylesheet" href="https://www.example.com/styles.css">
+`,
+      },
+    ],
+  },
+  {
+    chapterIndex: 4, //HTML Forms
+    questions: [
+      {
+        question: "How do you create a basic HTML form to collect user input?",
+        solution: `<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/submit" method="post">
+  <label for="fname">First name:</label><br><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label><br><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+`,
+      },
+      {
+        question:
+          "How can you create a form that requires user input to follow a specific pattern (e.g., a valid email)?",
+        solution: `<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/submit" method="post">
+  <label for="email">Email:</label><br><br>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+`,
+      },
+      {
+        question: "How do you create a form with a password input field?",
+        solution: `<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/submit" method="post">
+  <label for="password">Password:</label><br><br>
+  <input type="password" id="password" name="password" required><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+`,
+      },
+      {
+        question: "How can you add a dropdown list to a form?",
+        solution: `<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/submit" method="post">
+  <label for="cars">Choose a car:</label><br><br>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+`,
+      },
+      {
+        question:
+          "How can you create a form that includes radio buttons for multiple choices?",
+        solution: `<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/submit" method="post">
+  <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+`,
+      },
+    ],
+  },
+  {
+    chapterIndex: 5, //Semantic HTML
+    questions: [
+      {
+        question:"Article Tag: The <article> tag specifies independent, self-contained content.",
+        solution: `<article>
+    <h2>Semantic HTML</h2>
+    <p>Semantic HTML uses elements that clearly describe their meaning in a human- and machine-readable way.</p>
+</article>
+`,
+      },
+      {
+        question:
+          "Section Tag: The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.",
+        solution: `<section>
+    <h2>Introduction to Semantic HTML</h2>
+    <p>Semantic HTML provides meaning to web content, improving accessibility and SEO.</p>
+</section>
+`,
+      },
+      {
+        question: "Nav Tag: The <nav> tag defines a set of navigation links.",
+        solution: `<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+`,
+      },
+      {
+        question:
+          "Header Tag: The <header> tag represents introductory content or a set of navigational links.",
+        solution: `<header>
+    <h1>Welcome to Semantic HTML</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+`,
+      },
+      {
+        question:
+          "Footer Tag: The <footer> tag defines a footer for a document or section, typically containing author information, copyright, links to related documents, etc.",
+        solution: `<footer>
+    <p>© 2024 Example.com</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+</footer>
+`,
       },
     ],
   },
@@ -1059,16 +1265,108 @@ const practiceQuestions = [
 
 const notes = [
   {
-    chapterIndex: 0,
+    chapterIndex: 1, //Introduction to HTML
     notes: [
-      "C is a general-purpose programming language.",
-      "It was created by Dennis Ritchie at Bell Labs.",
-      "C is used for system and application software.",
+      "1991: HTML 1.0, the first version, is created by Tim Berners-Lee to structure documents on the web.",
+
+      "1995: HTML 2.0 is released, introducing basic table and image support.",
+
+      "1997: HTML 3.2 standardizes features like tables, applets, and complex forms.",
+
+      "1999: HTML 4.01, the most widely adopted early version, improves support for scripting and style sheets.",
+
+      "2000: XHTML 1.0 combines HTML with XML, enforcing stricter syntax rules.",
+
+      "2004: Work begins on HTML5 to address modern web needs.",
+
+      "2008: HTML5 draft specifications are released, including new elements like <canvas>, <video>, and <audio>.",
+
+      "2014: HTML5 becomes an official W3C Recommendation, revolutionizing web capabilities.",
+
+      "2020s: HTML5 continues to evolve with new standards for web components and accessibility.",
+
+      "Present: HTML remains the cornerstone of web development, supporting dynamic, interactive, and accessible web experiences.",
     ],
   },
   {
-    chapterIndex: 1,
-    notes: ["", ""],
+    chapterIndex: 2, //Understanding HTML
+    notes: [
+      "Elements: Building blocks of an HTML document, defined by tags, and containing content or other elements.",
+
+      "Tags: Markup that surrounds content to create an element. They come in pairs: opening and closing.",
+
+      "Attributes: Provide additional information about an element. They are included in the opening tag.",
+
+      "Nested Elements: Elements can be nested inside other elements, creating a hierarchy in the HTML document.",
+
+      "Self-Closing Tags: Some elements do not have a closing tag, like images and line breaks.",
+
+      "Semantic Elements: These elements clearly describe their meaning, like header, footer, article, and nav.",
+
+      "Global Attributes: Attributes that can be applied to any element, such as id, class, and style.",
+
+      "Block vs Inline Elements: Block elements take up the full width and start on a new line, whereas inline elements only take up as much width as necessary.",
+
+      "Document Structure: An HTML document starts with a doctype declaration, followed by html, head, and body elements.",
+
+      "Linking Resources: Attributes like href and src are used to link to external resources, such as stylesheets and images.",
+    ],
+  },
+  {
+    chapterIndex: 3, //HTML & URLS
+    notes: [
+      "Hyperlinks: URLs are used in HTML to create hyperlinks, allowing users to navigate from one web page to another.",
+
+      "Images: URLs are used to link to images that are embedded in an HTML page, allowing for the display of visual content.",
+
+      "Stylesheets: URLs are used to link to external CSS stylesheets that define the visual presentation of an HTML document.",
+
+      "JavaScript: URLs are used to link to external JavaScript files, enabling dynamic and interactive behavior on web pages.",
+
+      "Forms: URLs are used in form actions to specify where the form data should be sent when a user submits the form.",
+
+      "Resource Linking: URLs are essential for linking all sorts of resources, like fonts, videos, and other media files, ensuring they are correctly displayed or utilized in an HTML document.",
+    ],
+  },
+  {
+    chapterIndex: 4, //HTML Forms
+    notes: [
+      "Form Elements: HTML forms are created using the <form> tag, which acts as a container for various input elements like text fields, checkboxes, radio buttons, and submit buttons.",
+
+      "Action Attribute: This attribute in the <form> tag specifies the URL to which the form data is sent for processing after submission.",
+
+      "Method Attribute: It defines how the form data should be sent to the server, commonly using the GET or POST method.",
+
+      "Input Types: There are various input types like text, password, email, file, etc., that cater to different types of user data.",
+
+      "Form Validation: HTML5 includes built-in form validation features that allow you to specify constraints for input fields (e.g., required fields, pattern matching).",
+
+      "Labels and Accessibility: Using the <label> tag to associate labels with input elements improves form accessibility for screen readers and enhances user experience.",
+    ],
+  },
+  {
+    chapterIndex: 5, //Semantic HTML
+    notes: [
+      "Clear Structure: Semantic HTML uses elements that clearly describe their meaning and purpose, creating a more organized and understandable structure for both developers and browsers.",
+
+      "Accessibility: These elements improve accessibility by providing meaning to screen readers and other assistive technologies, helping users with disabilities navigate and understand web content more effectively.",
+
+      "SEO Benefits: Search engines can better understand the content and context of web pages, leading to improved search engine optimization (SEO) and higher rankings.",
+
+      "Maintainability: Semantic HTML makes the code more readable and maintainable, as it is easier to understand the purpose of different elements at a glance.",
+
+      "Standardization: It promotes the use of standardized elements, reducing the need for excessive div and span tags and leading to cleaner, more standardized code.",
+
+      "Browser Compatibility: Modern browsers are optimized to recognize and handle semantic elements more efficiently, enhancing performance and compatibility.",
+
+      "Future-Proofing: Using semantic HTML ensures that web pages remain compatible with future web standards and technologies, providing long-term benefits.",
+
+      "Better Communication: Semantic tags clearly communicate the structure and flow of a document, making collaboration among developers and designers more seamless.",
+
+      "Separation of Concerns: By defining clear roles for different sections of a webpage, semantic HTML helps in maintaining a clear separation between content, presentation, and behavior.",
+
+      "Enhanced User Experience: Overall, semantic HTML contributes to a better user experience by creating web pages that are easy to navigate, understand, and interact with.",
+    ],
   },
 ];
 
