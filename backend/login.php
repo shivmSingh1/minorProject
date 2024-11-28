@@ -1,11 +1,6 @@
 <?php
-session_start();
-require_once 'database.php';
 
-header('Access-Control-Allow-Origin: http://localhost:5173'); // Allow requests from your frontend
-header('Access-Control-Allow-Methods: POST, OPTIONS'); // Allow POST and OPTIONS methods (important for preflight)
-header('Access-Control-Allow-Headers: Content-Type, Authorization'); // Allow Content-Type and any other necessary headers
-header('Access-Control-Max-Age: 86400'); // Cache the preflight response for 1 day (optional but recommended)
+require_once 'database.php';
 
 // Sets the HTTP response header to indicate the content type of the response is JSON
 header("Content-Type: application/json");
@@ -38,8 +33,9 @@ if ($userData) {
             'message' => 'Login successful!',
             'name' => $userData['fullname']
         ];
+        session_start();
         $_SESSION['name'] = $userData['fullname'];
-        $_SESSION['isLoogedIn'] = true;
+        $_SESSION['isLoggedIn'] = true;
     } else {
         // Password is incorrect
         $response = [

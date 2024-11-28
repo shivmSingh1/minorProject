@@ -1,23 +1,13 @@
 <?php
-header('Content-Type: application/json');
-
 // Database connection settings
-$host = 'localhost'; // Database host
-$dbname = 'optlit'; // Database name
-$username = 'root'; // Database username
-$password = ''; // Database password
+$host = 'sql213.infinityfree.com'; // Database host
+$username = 'if0_37764148'; // Database username
+$password = '43LHGrCHn8kp'; // Database password
+$dbname = 'if0_37764148_optlit'; // Database name
 
-// Establish a connection
-$conn = mysqli_connect($host, $username, $password, $dbname);
-
-// Check the connection
-if (!$conn) {
-    // Return error details as JSON
-    echo json_encode([
-        "success" => false,
-        "error" => "Connection failed",
-        "details" => mysqli_connect_error()
-    ]);
-    exit; // Stop further execution
+try {
+    $conn = mysqli_connect($host, $username, $password, $dbname);
+} catch (\Throwable $th) {
+    die("Sorry something went wrong");
 }
 ?>

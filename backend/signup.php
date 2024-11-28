@@ -1,11 +1,6 @@
 <?php
 require_once 'database.php';
 
-header('Access-Control-Allow-Origin: http://localhost:5173'); // Allow requests from your frontend
-header('Access-Control-Allow-Methods: POST, OPTIONS'); // Allow POST and OPTIONS methods (important for preflight)
-header('Access-Control-Allow-Headers: Content-Type, Authorization'); // Allow Content-Type and any other necessary headers
-header('Access-Control-Max-Age: 86400'); // Cache the preflight response for 1 day (optional but recommended)
-
 // Sets the HTTP response header to indicate the content type of the response is JSON
 header("Content-Type: application/json");
 
@@ -43,6 +38,9 @@ $hash = password_hash($inputData['password'], PASSWORD_DEFAULT);
 $sql = "INSERT INTO `users` (`fullname`, `email`, `hash`) VALUES ('$fullname', '$email', '$hash')";
 $result = mysqli_query($conn, $sql);
 if ($result) {
+    session_start();
+    $_SESSION['name'] = $fullname;
+    $_SESSION['isLoggedIn'] = true;
     echo json_encode(["success" => true]);
 } else {
     echo json_encode(["success" => false, "error" => "Something Went Wrong, Its Server Issue"]);
