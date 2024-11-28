@@ -174,19 +174,8 @@ p {
                                 </ul>
                             </li>
                         </ul>
-                        <hr>
-                        <p>These concepts form the foundation of CSS and help control how elements are selected and styled on a webpage.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
-                        </svg></button><button>
-                        <div><br></div>
-                    </button></div>
             </div>
         </div>
     </div>
@@ -204,7 +193,7 @@ p {
 <p><strong>Padding</strong> is the space between the content and the border of an element. It provides internal spacing, giving breathing room inside the box around the content. Padding is often used to control how close the content is to the element&rsquo;s border.</p>
 <ul>
     <li>Padding is specified for each side of the element (top, right, bottom, left) and can be set with shorthand or individual properties.
-        <pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>padding: 10px; /* All sides */
+        <pre><div><div>css</div><div><div><div></div></div></div><div><code>padding: 10px; /* All sides */
 padding-top: 10px;
 padding-right: 20px;
 padding-bottom: 15px;
@@ -216,7 +205,7 @@ padding-left: 5px;
 <p>A <strong>border</strong> is a line around the padding (if present) and content area of an element. It separates the content from the margin, providing visual distinction. Borders can be styled with different widths, colors, and styles.</p>
 <ul>
     <li>Borders are also set for each side of the element (top, right, bottom, left).
-        <pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>border: 2px solid #000; /* 2px thick, solid black border */
+        <pre><div><div>css</div><div><div><div></div></div></div><div><code>border: 2px solid #000; /* 2px thick, solid black border */
 </code></div></div></pre>
     </li>
 </ul>
@@ -224,7 +213,7 @@ padding-left: 5px;
 <p><strong>Margin</strong> is the space outside the border, creating a gap between the element and its neighbors. It helps control the positioning of elements relative to one another.</p>
 <ul>
     <li>Margins also work on all sides (top, right, bottom, left) and can be set in shorthand or individually.
-        <pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>margin: 20px; /* All sides */
+        <pre><div><div>css</div><div><div><div></div></div></div><div><code>margin: 20px; /* All sides */
 margin-top: 20px;
 margin-right: 30px;
 margin-bottom: 10px;
@@ -250,9 +239,7 @@ margin-left: 5px;
                 <div>css</div>
                 <div>
                     <div>
-                        <div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
-                                </svg>Copy code</button></div>
+                        <div></div>
                     </div>
                 </div>
                 <div><code>box-sizing: border-box;<br></code></div>
@@ -264,7 +251,7 @@ margin-left: 5px;
 </ul>
 <h3>Visualizing the Box Model</h3>
 <p>Here&apos;s a visual breakdown of the box model:</p>
-<pre><div><div>lua</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>+-------------------------------+
+<pre><div><div>lua</div><div><div><div></div></div></div><div><code>+-------------------------------+
 |            Margin              | 
 |  +-------------------------+   |
 |  |        Border            |   |
@@ -286,7 +273,7 @@ margin-left: 5px;
 </ul>
 <h3>Practical Use of Box Model Properties</h3>
 <p>You can combine these properties to control layout and spacing in responsive designs. For example:</p>
-<pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>/* Apply box-sizing to make layout calculations simpler */
+<pre><div><div>css</div><code>/* Apply box-sizing to make layout calculations simpler */
 * {
   box-sizing: border-box;
 }
@@ -370,7 +357,7 @@ margin-left: 5px;
     </li>
     <li>
         <p><strong>Example</strong>:</p>
-        <pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>.container {
+        <pre><div><div>css</div><code>.container {
   display: flex;
   justify-content: space-between;
 }
@@ -402,7 +389,7 @@ margin-left: 5px;
 <ol>
     <li><strong>Media Queries</strong>: Used to change the layout for different screen sizes or devices.<ul>
             <li>Example:
-                <pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>@media screen and (max-width: 600px) {
+                <pre><div><div>css</div><code>@media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
   }
@@ -534,7 +521,7 @@ margin-left: 5px;
         <p><strong>Keyframes</strong>: Define the start and end points of an animation, along with any intermediate steps.</p>
         <ul>
             <li>Example:
-                <pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>@keyframes example {
+                <pre><div><div>css</div><div><code>@keyframes example {
   0% { background-color: red; }
   100% { background-color: blue; }
 }
@@ -601,7 +588,7 @@ margin-left: 5px;
 <ol>
     <li><strong>Hover Effects</strong>: Applies style changes when an element is hovered over.<ul>
             <li>Example:
-                <pre><div><div>css</div><div><div><div><button><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></div></div></div><div><code>.element:hover {
+                <pre><div><div>css</div><code>.element:hover {
   background-color: green;
   transform: scale(1.1);
 }</code></div></div></pre>
@@ -612,7 +599,7 @@ margin-left: 5px;
 		code: ``,
 	},
 
-	
+
 ]
 
 
@@ -972,185 +959,185 @@ External CSS is in a separate .css file linked to the HTML.
 	},
 	{
 		chapterIndex: 5,
-		questions:[
+		questions: [
 			{
 				question: "What is RGB?",
 				solution: "Answer: RGB stands for Red, Green, Blue, and combines these colors to make other colors."
-			  },
-			  {
+			},
+			{
 				question: "What is a HEX color code?",
 				solution: "Answer: HEX is a 6-digit code used to represent colors, like #FF0000 for red."
-			  },
-			  {
+			},
+			{
 				question: "How do you set a background image in CSS?",
 				solution: "Answer: Use background-image: url('image.jpg'); to add an image as the background."
-			  },
-			  {
+			},
+			{
 				question: "What does background-repeat do?",
 				solution: "Answer: It controls whether the background image repeats. Use repeat, no-repeat, repeat-x, or repeat-y."
-			  },
-			  {
+			},
+			{
 				question: "What is a linear gradient?",
 				solution: "Answer: A linear gradient smoothly blends colors along a straight line. Example: background: linear-gradient(to right, red, blue);"
-			  }
-			  
+			}
+
 		]
 	},
 	{
 		chapterIndex: 6,
-		questions:[{
+		questions: [{
 			question: "What is the purpose of the `font-family` property?",
 			solution: "Answer: `font-family` defines the type of font to use for text, like Arial or Times New Roman."
-		  },
-		  {
+		},
+		{
 			question: "How do you set the size of text in CSS?",
 			solution: "Answer: Use `font-size` to define the size of the text, such as `font-size: 16px;`."
-		  },
-		  {
+		},
+		{
 			question: "What does the `font-weight` property do?",
 			solution: "Answer: `font-weight` controls the thickness of the text, e.g., normal, bold, or light."
-		  },
-		  {
+		},
+		{
 			question: "What is `line-height` used for?",
 			solution: "Answer: `line-height` adjusts the space between lines of text to improve readability."
-		  },
-		  {
+		},
+		{
 			question: "How do you change the space between letters in CSS?",
 			solution: "Answer: Use `letter-spacing` to adjust the space between letters, like `letter-spacing: 2px;`."
-		  },
-		  {
+		},
+		{
 			question: "What does `word-spacing` control?",
 			solution: "Answer: `word-spacing` controls the space between words in a block of text."
-		  },
-		  {
+		},
+		{
 			question: "What does the `text-decoration` property do?",
 			solution: "Answer: `text-decoration` adds styles like underline, line-through, or overline to text."
-		  },
-		  {
+		},
+		{
 			question: "How can you make text uppercase in CSS?",
 			solution: "Answer: Use `text-transform: uppercase;` to change text to uppercase."
-		  },
-		  {
+		},
+		{
 			question: "What are web-safe fonts?",
 			solution: "Answer: Web-safe fonts are fonts that are widely supported across all browsers and devices."
-		  },
-		  {
+		},
+		{
 			question: "What is the advantage of using Google Fonts?",
 			solution: "Answer: Google Fonts offers a collection of free, easy-to-use, and web-optimized fonts."
-		  },
-		  {
+		},
+		{
 			question: "How do you set a fallback font in CSS?",
 			solution: "Answer: List multiple fonts in `font-family`, like `font-family: Arial, sans-serif;`."
-		  },
-		  {
+		},
+		{
 			question: "Can you use custom fonts in your website?",
 			solution: "Answer: Yes, you can use custom fonts from services like Google Fonts by linking them to your website."
-		  }
-		  
+		}
+
 
 		]
 	},
 	{
 		chapterIndex: 7,
-		questions:[[
+		questions: [[
 			{
-			  "question": "What are keyframe animations in CSS?",
-			  "solution": "Answer: Keyframe animations allow you to create smooth transitions between different styles at different points in time."
+				"question": "What are keyframe animations in CSS?",
+				"solution": "Answer: Keyframe animations allow you to create smooth transitions between different styles at different points in time."
 			},
 			{
-			  "question": "How do you define a keyframe animation in CSS?",
-			  "solution": "Answer: You use `@keyframes` followed by the animation steps (e.g., 0%, 50%, 100%)."
+				"question": "How do you define a keyframe animation in CSS?",
+				"solution": "Answer: You use `@keyframes` followed by the animation steps (e.g., 0%, 50%, 100%)."
 			},
 			{
-			  "question": "What is the purpose of the `animation` property?",
-			  "solution": "Answer: It is used to apply a keyframe animation to an element."
+				"question": "What is the purpose of the `animation` property?",
+				"solution": "Answer: It is used to apply a keyframe animation to an element."
 			},
 			{
-			  "question": "What does the `transition` property do in CSS?",
-			  "solution": "Answer: It smoothly changes property values when an element’s state changes, like on hover."
+				"question": "What does the `transition` property do in CSS?",
+				"solution": "Answer: It smoothly changes property values when an element’s state changes, like on hover."
 			},
 			{
-			  "question": "How can you control the speed of a transition?",
-			  "solution": "Answer: You can control it using the `duration` property (e.g., `0.5s`)."
+				"question": "How can you control the speed of a transition?",
+				"solution": "Answer: You can control it using the `duration` property (e.g., `0.5s`)."
 			},
 			{
-			  "question": "What are common timing functions for CSS transitions?",
-			  "solution": "Answer: `ease`, `linear`, `ease-in`, `ease-out`, and `ease-in-out`."
+				"question": "What are common timing functions for CSS transitions?",
+				"solution": "Answer: `ease`, `linear`, `ease-in`, `ease-out`, and `ease-in-out`."
 			},
 			{
-			  "question": "What is the `transform` property in CSS?",
-			  "solution": "Answer: It allows you to move, rotate, scale, or skew an element."
+				"question": "What is the `transform` property in CSS?",
+				"solution": "Answer: It allows you to move, rotate, scale, or skew an element."
 			},
 			{
-			  "question": "How do you rotate an element in CSS?",
-			  "solution": "Answer: Use `transform: rotate(45deg);` to rotate an element by 45 degrees."
+				"question": "How do you rotate an element in CSS?",
+				"solution": "Answer: Use `transform: rotate(45deg);` to rotate an element by 45 degrees."
 			},
 			{
-			  "question": "What does the `scale` function do in CSS?",
-			  "solution": "Answer: It changes the size of an element, like `transform: scale(1.5);` to make it 1.5 times bigger."
+				"question": "What does the `scale` function do in CSS?",
+				"solution": "Answer: It changes the size of an element, like `transform: scale(1.5);` to make it 1.5 times bigger."
 			},
 			{
-			  "question": "What is the effect of the `skew` function in CSS?",
-			  "solution": "Answer: It slants an element, either horizontally or vertically."
+				"question": "What is the effect of the `skew` function in CSS?",
+				"solution": "Answer: It slants an element, either horizontally or vertically."
 			},
 			{
-			  "question": "How do you create a hover effect in CSS?",
-			  "solution": "Answer: Use the `:hover` pseudo-class to define changes when the mouse hovers over an element."
+				"question": "How do you create a hover effect in CSS?",
+				"solution": "Answer: Use the `:hover` pseudo-class to define changes when the mouse hovers over an element."
 			},
 			{
-			  "question": "How can you combine `transition` and `transform` for a hover effect?",
-			  "solution": "Answer: By defining both properties in the `:hover` state to change the element’s style smoothly when hovered."
+				"question": "How can you combine `transition` and `transform` for a hover effect?",
+				"solution": "Answer: By defining both properties in the `:hover` state to change the element’s style smoothly when hovered."
 			}
-		  ]
-		  
+		]
+
 
 		]
 	}
 
-		];
+];
 
 
-		const notes = [
-			 {
-			
-				chapterIndex: 0,
-				notes: [
-					" CSS stands for Cascading Style Sheets and is used to style and design the layout of HTML elements on a webpage.",
-					"CSS controls the appearance of HTML elements, including colors, fonts, sizes, positions, and more.",
-					"CSS separates content from design by separating HTML (structure) from CSS (style), making code easier to maintain and update.",
-					"CSS enhances user experience by making websites visually appealing and improving the layout and interactivity.",
+const notes = [
+	{
+
+		chapterIndex: 0,
+		notes: [
+			" CSS stands for Cascading Style Sheets and is used to style and design the layout of HTML elements on a webpage.",
+			"CSS controls the appearance of HTML elements, including colors, fonts, sizes, positions, and more.",
+			"CSS separates content from design by separating HTML (structure) from CSS (style), making code easier to maintain and update.",
+			"CSS enhances user experience by making websites visually appealing and improving the layout and interactivity.",
 
 
-					"Selectors in CSS are used to target HTML elements that you want to style (e.g., p, h1, or .button).",
+			"Selectors in CSS are used to target HTML elements that you want to style (e.g., p, h1, or .button).",
 
 
-					"CSS declaration consists of two parts: property (e.g., color) and value (e.g., blue).",
+			"CSS declaration consists of two parts: property (e.g., color) and value (e.g., blue).",
 
 
-					"Inline CSS is written directly inside an HTML element using the style attribute and is not ideal for large projects.",
-					"Internal CSS is written within a <style> tag inside the HTML document's <head> section, usually for smaller websites.",
+			"Inline CSS is written directly inside an HTML element using the style attribute and is not ideal for large projects.",
+			"Internal CSS is written within a <style> tag inside the HTML document's <head> section, usually for smaller websites.",
 
 
-					"External CSS is written in a separate .css file and linked to HTML using the <link> tag, which is best for large websites.",
+			"External CSS is written in a separate .css file and linked to HTML using the <link> tag, which is best for large websites.",
 
 
-					"Element Selector targets specific HTML elements, like p, h1, or div.",
-					"Class Selector targets elements with a specific class, such as .button or .header.",
-					"ID Selector targets an element with a specific ID, such as #header, making it unique within the page.",
+			"Element Selector targets specific HTML elements, like p, h1, or div.",
+			"Class Selector targets elements with a specific class, such as .button or .header.",
+			"ID Selector targets an element with a specific ID, such as #header, making it unique within the page.",
 
 
-					"Universal Selector (*) applies styles to all elements on the webpage.",
-					"Linking an external CSS file to an HTML document is done using the <link> tag inside the <head> section.",
-					"Responsive design in CSS adjusts the layout of a website to look good on different devices (e.g., mobile, tablet, desktop).",
-
-
-
+			"Universal Selector (*) applies styles to all elements on the webpage.",
+			"Linking an external CSS file to an HTML document is done using the <link> tag inside the <head> section.",
+			"Responsive design in CSS adjusts the layout of a website to look good on different devices (e.g., mobile, tablet, desktop).",
 
 
 
-				]
-			},
-	
+
+
+
+		]
+	},
+
 	{
 		chapterIndex: 1,
 		notes: [
@@ -1239,35 +1226,35 @@ External CSS is in a separate .css file linked to the HTML.
 		]
 	},
 	{
-		chapterIndex:5,
-		notes:[
-"RGB Color Model : Combines red, green, and blue light to create colors.",
-  "RGB Values : Each color can have a value from 0 to 255.",
-  "HEX Code : A 6-digit hexadecimal code that represents colors (e.g., #FF0000).",
-  "HSL : Represents color using three components: Hue, Saturation, and Lightness.",
-  "Hue : The type of color, expressed in degrees (0–360°).",
-  "Saturation : How vivid or dull a color is, from 0% (gray) to 100% (full color).",
-  "Lightness : How light or dark a color is, from 0% (black) to 100% (white).",
-  "Background Color : Sets the background color of an element using background-color.",
-  "Background Image : Applies an image as the background with background-image: url().",
-  "Background Repeat : Controls if the background image repeats, with values like repeat, no-repeat, etc.",
-  "Background Position : Determines where the background image is placed (e.g., center, top left).",
-  "Background Attachment : Specifies whether the background image scrolls with the page (scroll) or stays fixed (fixed).",
-  "Linear Gradient : A gradient where colors transition along a straight line.",
-  "Radial Gradient : A gradient where colors radiate outward from a central point.",
-  "CSS Gradient Syntax : To create gradients, use background: linear-gradient() or background: radial-gradient()."
+		chapterIndex: 5,
+		notes: [
+			"RGB Color Model : Combines red, green, and blue light to create colors.",
+			"RGB Values : Each color can have a value from 0 to 255.",
+			"HEX Code : A 6-digit hexadecimal code that represents colors (e.g., #FF0000).",
+			"HSL : Represents color using three components: Hue, Saturation, and Lightness.",
+			"Hue : The type of color, expressed in degrees (0–360°).",
+			"Saturation : How vivid or dull a color is, from 0% (gray) to 100% (full color).",
+			"Lightness : How light or dark a color is, from 0% (black) to 100% (white).",
+			"Background Color : Sets the background color of an element using background-color.",
+			"Background Image : Applies an image as the background with background-image: url().",
+			"Background Repeat : Controls if the background image repeats, with values like repeat, no-repeat, etc.",
+			"Background Position : Determines where the background image is placed (e.g., center, top left).",
+			"Background Attachment : Specifies whether the background image scrolls with the page (scroll) or stays fixed (fixed).",
+			"Linear Gradient : A gradient where colors transition along a straight line.",
+			"Radial Gradient : A gradient where colors radiate outward from a central point.",
+			"CSS Gradient Syntax : To create gradients, use background: linear-gradient() or background: radial-gradient()."
 		]
 	},
 	{
-		chapterIndex:6,
-		notes:["Keyframe Animations define steps for animating an element.",
-			
+		chapterIndex: 6,
+		notes: ["Keyframe Animations define steps for animating an element.",
+
 			"@keyframes is used to create keyframe animations.",
 			"Animation Properties include name, duration, and timing function.",
 			"CSS Transitions create smooth changes between two states.",
 			"Transition Properties control duration, delay, and timing.",
 			"Timing Functions define the speed curve of transitions (e.g., ease, linear).",
-			"Hover Effects apply styles when an element is hovered over.","",
+			"Hover Effects apply styles when an element is hovered over.", "",
 			":hover pseudo-class triggers hover effects.",
 			"Transform Property modifies an element's shape or position.",
 			"Rotate rotates an element using transform: rotate().",
@@ -1279,12 +1266,12 @@ External CSS is in a separate .css file linked to the HTML.
 
 
 ]
-	
+
 const articles = [
 	{
 		chapterIndex: 0,
 		articles: [
-			
+
 		]
 	},
 	{
