@@ -1,9 +1,9 @@
-import { shToast, success, danger } from "../modules/toast"
+import { shToast, success, danger } from "../modules/toast";
 
 const signUpBtn = document.querySelector(".sign-up-btn");
 signUpBtn.addEventListener("click", () => {
-    window.location.href = "../pages/signup.html"
-})
+    window.location.href = "../pages/signup.html";
+});
 
 // --- --- --- EYE SVG --- --- ---
 const openEye = document.getElementById("open-eye");
@@ -22,9 +22,9 @@ closeEye.addEventListener("click", (e) => {
 
 
 // --- --- --- SENDING RESPONSE TO DATABASE --- --- ---
-const form = document.querySelector("#login-form");
+const loginForm = document.getElementById("login-form");
 
-form.addEventListener("submit", function (e) {
+loginForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent the default form submission
 
     const email = document.querySelector("#email").value;
@@ -37,7 +37,7 @@ form.addEventListener("submit", function (e) {
     };
 
     // Send data to PHP using AJAX (fetch API)
-    fetch("http://localhost:8000/backend/login.php", {
+    fetch("https://optlit.rf.gd//backend/login.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/json", // Sending data as JSON
@@ -55,7 +55,7 @@ form.addEventListener("submit", function (e) {
             if (data.status) {
                 shToast("Welcome Back", success);
                 setTimeout(() => {
-                    window.location.href = "../index.html";
+                    
                 }, 1000);
             } else {
                 shToast(`Sorry! - ${data.message}`, danger);

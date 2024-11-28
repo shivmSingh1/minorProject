@@ -64,7 +64,7 @@ form.addEventListener("submit", function (e) {
         };
 
         // Send data to PHP using AJAX (fetch API)
-        fetch("http://localhost:8000/backend/signup.php", {
+        fetch("https://optlit.rf.gd/backend/signup.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", // Sending data as JSON
@@ -83,7 +83,7 @@ form.addEventListener("submit", function (e) {
                     shToast("Registration Successfull", success);
                     setTimeout(() => {
                         window.location.href = "../index.html";
-                    }, 2000);
+                    }, 1000);
                 } else {
                     shToast(`Registration Unsuccessful - ${data.error}`, danger);
                 }
